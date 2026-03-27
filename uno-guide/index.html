@@ -33,7 +33,8 @@
     .sensation-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 960px; margin: 0 auto; }
     .sensation-card { background: var(--color-white); border-radius: 20px; padding: 36px 28px; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
     .sensation-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(255, 48, 204, 0.1); }
-    .sensation-icon { width: 180px; height: 180px; margin: 0 auto 16px; border-radius: 16px; overflow: hidden; }
+    .sensation-icon { width: 180px; height: 180px; margin: 0 auto 16px; border-radius: 16px; overflow: hidden; background: white; display: flex; align-items: center; justify-content: center; }
+    .sensation-icon img { width: 100%; height: 100%; object-fit: contain; padding: 16px; }
     .sensation-card h3 { font-family: var(--font-heading); font-size: 20px; font-weight: 600; color: var(--color-dark); margin-bottom: 12px; }
     .sensation-card p { font-family: var(--font-body); font-size: 15px; color: var(--color-gray); line-height: 1.6; }
     .image-placeholder { width: 100%; height: 100%; min-height: 180px; background: linear-gradient(135deg, #FFEAF9 0%, #FCF7ED 100%); border: 2px dashed var(--color-pink); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-family: var(--font-body); font-size: 13px; color: var(--color-pink); text-align: center; padding: 16px; }
@@ -150,9 +151,9 @@
     <h2 style="font-family: var(--font-heading); font-size: 40px; font-weight: 700; color: var(--color-dark); text-align: center; margin-bottom: 16px; line-height: 1.1;">Here's what you're going to <span style="color: var(--color-pink);">feel</span></h2>
     <p class="section-subtitle">Uno is a classic bullet vibrator with a tapered tip. It delivers focused, precise vibrations right where you want them. Simple, effective, and endlessly versatile.</p>
     <div class="sensation-grid">
-      <div class="sensation-card"><div class="sensation-icon"><div class="image-placeholder">IMAGE NEEDED:<br>Gentle Hum sensation illustration</div></div><h3>Gentle Hum</h3><p>On the lowest setting, you'll feel a soft, focused hum at the tip. It's gentle enough to explore without being overwhelming, perfect for discovering what you like.</p></div>
-      <div class="sensation-card"><div class="sensation-icon"><div class="image-placeholder">IMAGE NEEDED:<br>Focused Precision sensation illustration</div></div><h3>Focused Precision</h3><p>As you increase intensity, the tapered tip delivers increasingly focused vibrations. The precision lets you target exactly the right spot and stay there.</p></div>
-      <div class="sensation-card"><div class="sensation-icon"><div class="image-placeholder">IMAGE NEEDED:<br>Full Intensity sensation illustration</div></div><h3>Full Intensity</h3><p>At the highest level, Uno delivers strong, concentrated vibrations through the tapered point. Direct, powerful, and exactly where you need it.</p></div>
+      <div class="sensation-card"><div class="sensation-icon"><img src="images/sensation-kisses.png" alt="Gentle Hum sensation" loading="lazy"></div><h3>Gentle Hum</h3><p>On the lowest setting, you'll feel a soft, focused hum at the tip. It's gentle enough to explore without being overwhelming, perfect for discovering what you like.</p></div>
+      <div class="sensation-card"><div class="sensation-icon"><img src="images/sensation-waves.png" alt="Focused Precision sensation" loading="lazy"></div><h3>Focused Precision</h3><p>As you increase intensity, the tapered tip delivers increasingly focused vibrations. The precision lets you target exactly the right spot and stay there.</p></div>
+      <div class="sensation-card"><div class="sensation-icon"><img src="images/sensation-crescendo.png" alt="Full Intensity sensation" loading="lazy"></div><h3>Full Intensity</h3><p>At the highest level, Uno delivers strong, concentrated vibrations through the tapered point. Direct, powerful, and exactly where you need it.</p></div>
     </div>
   </section>
 
