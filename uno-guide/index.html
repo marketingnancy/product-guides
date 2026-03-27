@@ -90,6 +90,7 @@
     .product-tabs { margin-bottom: 24px; } .product-tab-nav { display: flex; gap: 0; border-bottom: 2px solid #eee; margin-bottom: 16px; } .product-tab-btn { font-family: var(--font-heading); font-size: 14px; font-weight: 600; color: var(--color-gray); background: none; border: none; padding: 12px 20px; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.2s; } .product-tab-btn.active { color: var(--color-pink); border-bottom-color: var(--color-pink); }
     .product-tab-content { display: none; } .product-tab-content.active { display: block; } .product-tab-content ol { padding-left: 20px; } .product-tab-content li { font-family: var(--font-body); font-size: 14px; color: var(--color-dark); padding: 4px 0; } .product-tab-content table { width: 100%; font-family: var(--font-body); font-size: 14px; } .product-tab-content table td { padding: 8px 0; border-bottom: 1px solid #f0f0f0; } .product-tab-content table td:first-child { font-weight: 600; color: var(--color-dark); width: 40%; } .product-tab-content table td:last-child { color: var(--color-gray); }
     .product-shop-btn { width: 100%; font-size: 16px; padding: 16px; }
+    .howitworks-grid { grid-template-columns: 1fr 1fr; }
     @media (max-width: 768px) {
       .hero h1 { font-size: 32px; }
       .sensation-grid { display: flex !important; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 16px; max-width: 100% !important; padding: 0 24px 16px; scrollbar-width: none; }
@@ -159,7 +160,7 @@
   </section>
 
   <section style="padding: 80px 24px; background: var(--color-cream);">
-    <div class="howitworks-grid" style="max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+    <div class="howitworks-grid" style="max-width: 960px; margin: 0 auto; display: grid; gap: 48px; align-items: center;">
       <div class="howitworks-image" style="position: relative; display: flex; align-items: center; justify-content: center;">
         <video id="howitworksVideo" playsinline muted loop autoplay style="width: 100%; border-radius: 16px; position: relative; z-index: 1; aspect-ratio: 1; object-fit: cover;">
           Your browser does not support the video tag.

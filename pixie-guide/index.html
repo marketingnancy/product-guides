@@ -113,6 +113,7 @@
     .pulse-ring { position: absolute; width: 200px; height: 200px; border-radius: 50%; border: 2px solid var(--color-pink); opacity: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); }
     .pulse-ring-1 { animation: pulseRing 3s ease-out infinite; } .pulse-ring-2 { animation: pulseRing 3s ease-out infinite 1s; } .pulse-ring-3 { animation: pulseRing 3s ease-out infinite 2s; }
     @keyframes pulseRing { 0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.6; } 100% { transform: translate(-50%, -50%) scale(2); opacity: 0; } }
+    .howitworks-grid { grid-template-columns: 1fr 1fr; }
     @media (max-width: 768px) {
       .hero h1 { font-size: 32px; }
       .section-title { font-size: 32px; }
@@ -194,7 +195,7 @@
   </section>
 
   <section style="padding: 80px 24px; background: var(--color-cream);">
-    <div class="howitworks-grid" style="max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+    <div class="howitworks-grid" style="max-width: 960px; margin: 0 auto; display: grid; gap: 48px; align-items: center;">
       <div class="howitworks-image" style="position: relative; display: flex; align-items: center; justify-content: center;">
         <div class="pulse-ring pulse-ring-1"></div><div class="pulse-ring pulse-ring-2"></div><div class="pulse-ring pulse-ring-3"></div>
         <img src="images/How does it actually work.png" alt="How Pixie's magnetic attachment works" style="width: 100%; border-radius: 16px; position: relative; z-index: 1;" loading="lazy">
