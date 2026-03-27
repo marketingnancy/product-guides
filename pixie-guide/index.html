@@ -56,15 +56,14 @@
     .techniques-header h2 { font-family: var(--font-heading-italic); font-size: 40px; font-weight: 700; color: var(--color-white); margin-bottom: 12px; }
     .techniques-header p { font-family: var(--font-body); font-size: 16px; color: rgba(255, 255, 255, 0.85); max-width: 600px; margin: 0 auto; line-height: 1.6; }
     .techniques-carousel-wrapper { position: relative; padding: 0 24px; }
-    .techniques-carousel { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 8px 0 24px; scrollbar-width: none; } .techniques-carousel::-webkit-scrollbar { display: none; }
-    .technique-card { flex: 0 0 260px; background: var(--color-white); border-radius: 20px; overflow: hidden; scroll-snap-align: start; transition: transform 0.3s ease; } .technique-card:hover { transform: translateY(-4px); }
+    .techniques-carousel { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1100px; margin: 0 auto; padding: 8px 0 24px; }
+    .technique-card { background: var(--color-white); border-radius: 20px; overflow: hidden; transition: transform 0.3s ease; } .technique-card:hover { transform: translateY(-4px); }
     .technique-card-image { width: 100%; aspect-ratio: 3/4; overflow: hidden; position: relative; }
     .technique-card-body { padding: 20px 16px 24px; }
     .technique-card-body h3 { font-family: var(--font-heading-italic); font-size: 20px; font-weight: 700; color: var(--color-dark); margin-bottom: 4px; }
     .technique-card-body .technique-tagline { font-family: var(--font-body); font-size: 13px; color: var(--color-pink); font-style: italic; margin-bottom: 10px; }
     .technique-card-body p { font-family: var(--font-body); font-size: 13px; color: var(--color-gray); line-height: 1.5; }
-    .techniques-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--color-lime); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 20px; color: var(--color-dark); z-index: 2; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: transform 0.2s; }
-    .techniques-nav:hover { transform: translateY(-50%) scale(1.1); } .techniques-nav.prev { left: 8px; } .techniques-nav.next { right: 8px; }
+    .techniques-nav { display: none; }
     .video-section { padding: var(--section-padding); background: var(--color-white); }
     .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 960px; margin: 0 auto; padding: 0 24px; }
     .video-thumb video { width: 100%; height: 100%; object-fit: cover; }
@@ -129,7 +128,7 @@
       .howitworks-image { order: -1; }
       .howitworks-image .pulse-ring { display: none; }
     }
-    @media (max-width: 480px) { .hero h1 { font-size: 30px; } .technique-card { flex: 0 0 200px; } }
+    @media (max-width: 480px) { .hero h1 { font-size: 30px; } .techniques-carousel { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
   </style>
 </head>
 <body>
